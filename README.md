@@ -2,4 +2,4 @@
 
 Not intended for public use.
 
-A simple CV/résumé generator made with React and vanilla CSS.
+A (very) simple CV/résumé generator made with React and vanilla CSS.
