@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+form section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-left: 3px;
+  font-size: 1.1em;
+
+  align-self: flex-start;
+}
+
+input {
+  padding: 4px 5px;
+  min-width: 280px;
+
+  font-size: 1em;
+}
+
+.section-title {
+  font-size: 1.25em;
+  font-style: italic;
+
+  margin-bottom: 10px;
+}
