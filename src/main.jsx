@@ -6,6 +6,7 @@ import Form from "./Form";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <h1>CV App</h1>
+    <p>Perfect if you&apos;ve only ever worked one job!</p>
     <Form />
   </StrictMode>
 );
