@@ -1,6 +1,9 @@
 import { useState } from "react";
 
+import "./App.css";
+
 import Form from "./Form";
+import Resume from "./Resume";
 
 function App() {
   const [info, setInfo] = useState({
@@ -35,14 +38,25 @@ function App() {
   if (editMode) {
     return (
       <>
-        <Form setField={setField} setWorkDescription={setWorkDescription} />
+        <Form
+          info={info}
+          setField={setField}
+          setWorkDescription={setWorkDescription}
+        />
         <button type="button" className="submit" onClick={toggleEditMode}>
           Submit
         </button>
       </>
     );
   } else {
-    // return resume
+    return (
+      <>
+        <Resume info={info} />
+        <button type="button" className="edit" onClick={toggleEditMode}>
+          Edit
+        </button>
+      </>
+    );
   }
 }
 
