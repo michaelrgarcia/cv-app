@@ -1,7 +1,4 @@
-import "./App.css";
 import "./Form.css";
-
-import { useState } from "react";
 
 function Input({ id, labelText, type, setter }) {
   return (
@@ -32,32 +29,8 @@ function FormSection({ title, inputs, setField }) {
   );
 }
 
-function Form() {
-  const [info, setInfo] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    school: "",
-    study: "",
-    stdybegin: "",
-    stdyend: "",
-    company: "",
-    position: "",
-    startdate: "",
-    enddate: "",
-    responsibilities: "",
-  });
-
-  function setField(id, value) {
-    setInfo({ ...info, [id]: value });
-  }
-
-  function setWorkDescription(e) {
-    setInfo({ ...info, responsibilities: e.target.value });
-  }
-
-  // define inputs for each section below
-  // ids must match with info object properties
+function Form({ setField, setWorkDescription }) {
+  // ids must match with form fields that app uses
 
   const personalInfo = [
     { id: "name", type: "text", labelText: "Name" },
