@@ -32,7 +32,9 @@ function Resume({ info }) {
             <span>{info.enddate}</span>
           </div>
         </div>
-        <p className="work-info">- {info.responsibilities}</p>
+        <p className="work-info">
+          {info.responsibilities ? "-" : ""} {info.responsibilities}
+        </p>
       </section>
     </div>
   );
