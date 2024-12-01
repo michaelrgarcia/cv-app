@@ -1,4 +1,4 @@
-import "./Form.css";
+import "../styles/Form.css";
 
 function Input({ id, labelText, type, setter, value }) {
   return (
