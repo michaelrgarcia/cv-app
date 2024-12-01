@@ -5,7 +5,8 @@
   text-align: center;
 }
 
-.submit {
+.submit,
+.edit {
   background-color: rgb(180, 177, 177);
 
   margin-top: 30px;
