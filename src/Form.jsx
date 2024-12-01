@@ -31,8 +31,6 @@ function FormSection({ title, inputs, setField }) {
 }
 
 function Form({ info, setField, setWorkDescription }) {
-  // ids must match with form fields that app uses
-
   const personalInfo = [
     { id: "name", type: "text", labelText: "Name", value: info.name },
     { id: "email", type: "email", labelText: "Email", value: info.email },
